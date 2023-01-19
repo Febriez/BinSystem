@@ -1,0 +1,5 @@
+name: BinSystem
+version: '${project.version}'
+main: com.febrie.bin.BinSystemMain
+api-version: 1.19
+authors: [ Febrie ]

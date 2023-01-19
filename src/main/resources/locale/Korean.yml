@@ -1,0 +1,55 @@
+easyFix:
+  txt:
+    cmd:
+      args-not-set:
+        - "/수리권 <제작> [횟수] [개수]"
+        - "- 횟수와 개수를 적지 않으면 1로 처리 됩니다"
+      noRemain:
+        - "&c남은 수리 횟수가 없습니다"
+      useSuccess:
+        - "&a성공적으로 인벤토리의 모든 도구를 수리 하였습니다"
+trashcan:
+  gui:
+    title: "&b쓰레기통"
+IOMSG:
+  txt:
+    join:
+      nonOp:
+        - "&2[&a+&2] &e%player%"
+      Op:
+        - "&2[&a+&2] &e%player%"
+    quit:
+      nonOp:
+        - "&2[&4-&2] &e%player%"
+      Op:
+        - "&2[&4-&2] &e%player%"
+MegaPhone:
+  #cooltime의 기준값=분 (이 값을 변경하려면 MegaPhone.txt.cmd.args-not-set 설명도 변경하세요)
+  cool-time: 180
+  txt:
+    opCMD:
+      args-not-set:
+        - "&d/공지 할말"
+      sendMSGFormat:
+        - "&4&m            &r공지&4&m             "
+        - "메세지: %msg%"
+        - "&f작성자: &c&l%player%"
+        - "&4&m                               "
+      sendTitle:
+        title: "%msg%"
+        sub-title: "&c&l%player%"
+    cmd:
+      args-not-set:
+        - " "
+        - "&f/확성기 할말 : 확성기 기능을 사용합니다. &8(쿨타임 180초)"
+        - " "
+      hasCoolDown:
+        - "&c아직 사용할 수 없습니다."
+      sendMSGFormat:
+        - "&m                               "
+        - "&a&l%player%님의 확성기"
+        - " &8&l:: &r%msg%"
+        - "&m                               "
+    cool-done:
+      - " "
+      - "&2&l지금부터 다시 확성기를 사용할 수 있습니다 !"
